@@ -14,11 +14,19 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 public class TimeMapperTests {
 
     @Autowired(required = false)
-    private TimeMapper2 timeMapper;
+    private TimeMapper2 timeMapper1;
+
+    @Autowired(required = false)
+    private TimeMapper timeMapper2;
 
 
     @Test
-    public void testTimeMapper() {
-        log.info(timeMapper.getNow());
+    public void testTimeMapper1() {
+        log.info(timeMapper1.getNow());
+    }
+
+    @Test
+    public void testTimeMapper2() {
+        log.info(timeMapper2.getTimeNow());
     }
 }
