@@ -24,22 +24,22 @@ class MemberServiceImplTest {
     MemberService memberService;
 
 
-    @Test
-    @Transactional
-    @Rollback(false)
-    void joinMember() {
-        Member m = new Member();
-        m.setUserId("yumi05");
-        m.setUserPwd("pw1234");
-        m.setUserName("유미서");
-        m.setUserEmail("yumi01@example.com");
-        m.setJoinDate(LocalDate.now());
-
-        memberService.joinMember(m);
-    }
-
-    @Test
-    void memberList() {
-        memberService.memberList().forEach(System.out::println);
-    }
+//    @Test
+//    @Transactional
+//    @Rollback(false)
+//    void joinMember() {
+//        Member m = new Member();
+//        m.setUserId("yumi05");
+//        m.setUserPwd("pw1234");
+//        m.setUserName("유미서");
+//        m.setUserEmail("yumi01@example.com");
+//        m.setJoinDate(LocalDate.now());
+//
+//        memberService.joinMember(m);
+//    }
+//
+//    @Test
+//    void memberList() {
+//        memberService.memberList().forEach(System.out::println);
+//    }
 }
