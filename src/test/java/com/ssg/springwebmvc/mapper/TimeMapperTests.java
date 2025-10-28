@@ -13,20 +13,15 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
         {"file:src/main/webapp/WEB-INF/spring/root-context.xml"})
 public class TimeMapperTests {
 
-    @Autowired(required = false)
-    private TimeMapper2 timeMapper1;
 
     @Autowired(required = false)
-    private TimeMapper timeMapper2;
+    private TimeMapper timeMapper;
 
 
     @Test
     public void testTimeMapper1() {
-        log.info(timeMapper1.getNow());
+        log.info(timeMapper.getNow());
     }
 
-    @Test
-    public void testTimeMapper2() {
-        log.info(timeMapper2.getTimeNow());
-    }
+
 }
