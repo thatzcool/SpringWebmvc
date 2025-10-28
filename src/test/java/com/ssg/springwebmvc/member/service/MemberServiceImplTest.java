@@ -29,7 +29,7 @@ class MemberServiceImplTest {
     @Rollback(false)
     void joinMember() {
         Member m = new Member();
-        m.setUserId("yumi02");
+        m.setUserId("yumi05");
         m.setUserPwd("pw1234");
         m.setUserName("유미서");
         m.setUserEmail("yumi01@example.com");
